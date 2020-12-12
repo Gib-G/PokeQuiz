@@ -1,0 +1,21 @@
+<div class="w3-margin" ng-controller="TypeController">
+
+  <br>
+  <h2>Donne le(s) type(s) de ce Pokémon !</h2>
+
+  <br><br>
+
+  <img src="{{ spriteUrl }}" alt="Pokémon sprite" style="width:200px;height:200px">
+  <p>{{ pokemonName }}</p>
+
+  <button ng-click="reset()"
+    type="button" class="w3-btn w3-red w3-round-small">Proposer un autre Pokémon
+  </button>
+
+  <br><br>
+
+  <button ng-click="goToHome()"
+    type="button" class="w3-btn w3-red w3-round-small">Retour à la page d'accueil
+  </button>
+
+</div>

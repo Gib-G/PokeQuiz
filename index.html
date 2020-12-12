@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>PokéQuiz</title>
+
+    <!-- CSS
+    ––––––––––––––––––––––––––––––––––––––––––––––––––-->
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="css/font-awesome-4.5.0/css/font-awesome.min.css">
+
+    <style>
+      body {
+        background-image: url('assets/bg.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+    </style>
+
+  </head>
+
+  <body ng-app="myApp">
+
+    <!-- header
+    ––––––––––––––––––––––––––––––––––––––––––––––––––-->
+    <div class="w3-container w3-red" style="text-align: center;">
+        <h1><b>PokéQuiz</b></h1>
+    </div>
+
+
+    <!-- dynamic content placeholder
+    ––––––––––––––––––––––––––––––––––––––––––––––––––-->
+    <div ui-view style="text-align: center;"></div>
+
+
+    <!-- libraries
+    ––––––––––––––––––––––––––––––––––––––––––––––––––-->
+    <script src="jslibs/angular.min.js"></script>
+    <script src="jslibs/angular-ui-router.min.js"></script>
+
+    <!-- controllers
+    ––––––––––––––––––––––––––––––––––––––––––––––––––-->
+    <script src="js/myApp.js"></script>
+    <script src="js/sampleFactory.js"></script>
+    <script src="home/homeController.js"></script>
+    <script src="type/typeController.js"></script>
+    <script src="weight/weightController.js"></script>
+
+
+  </body>
+
+</html>
